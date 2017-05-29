@@ -1,0 +1,58 @@
+while True: #i hope this works 
+	from time import sleep
+	box=['snakes','chairs','important documents',' walking stick']   #makes a list
+	def no(): #makes a function so its cleaner and not so cluttered
+		print ("this is not important")
+		sleep (1)
+		print ("I'm done talking to you")
+		sleep (1) 
+
+	print ("Hey, I need you to do something")
+	sleep(1)
+	print (box)
+	favour=input ("please get me the something important out of this box")
+	
+	
+	if favour== "snakes":
+		print ("What!? Although snakes have equal rights they are not what I was looking for")
+		sleep(1)
+		no()
+		break
+		
+	elif favour== "chairs":
+		print (" How did they even get in there?")
+		sleep (1)
+		print ("Why would you think chairs are important?")
+		sleep (1)
+		no()
+		break 
+
+	elif favour== "walking stick":
+		print ("Do I look 80?")
+		sleep (1)
+		print ("Don't answer that")
+		sleep (1)
+		no()
+		break
+		
+	elif favour== "important documents":   #positive outcome that SHOULD play out
+		print ("Congrats you can read the word 'important' correctly")
+		sleep (1)
+		print ("You win a trophy")
+		sleep (1)
+		
+		print ("     ___________         ")
+		print ("    '._==_==_=_.'        ")
+		print ("    .-\:      /-         ")
+		print ("   | (|:.     |) |       ")
+		print ("    '-|:.     |-'        ")
+		print ("      \::.    /          ")
+		print ("       '::. .'           ")
+		print ("         ) (             ")
+		print ("       _.' '._           ")
+		print ("      `~~~~~~~`          ")
+
+	else: #when a person types in something not if the list should say this
+		print ("where did you get that?")
+		no()
+		break
